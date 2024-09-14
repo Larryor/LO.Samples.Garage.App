@@ -1,27 +1,27 @@
-# LOSamplesGarageApp
+#Task
+A customer wants a software to manage his car rental business.
+He has a customer base and a list of cars that customers can rent
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
-## Development server
+#Requirements
+The software must be able to:
+- Manage customers (CRUD)
+- Manage cars (CRUD)
+- View and edit the current rental state of the cars
+- Provide information on
+o what customer is renting which car right now,
+o how many cars are rented right now,
+o and how many kilometres in total a car was rented in the past.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#User stories
+- As a user i want to be able to
+   - navigate to see all the cars i have and their state (Available, Rented, In Repair) along side how many total KM they have been rented for in the past
+   - be able to switch a car to/from all the states
+   - be able to add a new car
+   - be able to delete a car (only allowed in the state "Available" and "In Repair"
+ 
+- As a user i want to be able to
+   - navigate to see all my customers
+   - see how many cars a customer is renting
+   - add a new customer
+   - remove a current customer (only allowed if the customer is not currently renting a car)
